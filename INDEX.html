@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Galería de Diseños</title>
+
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="CSS/estilo.css">
+
+
+    </head>
+
+    <body>
+<header class="text-center bg-dark text-white p-4">
+<h1>Mis Diseños</h1>
+<p>Proyecto Mis Diseño</p>     </header>   
+<div class="container mt-5">
+  <div class="row g-4">
+    <div class="col-12 col-sm-6">
+      <div class="tarjeta">
+         <h2> Diseño 1 </h2>
+         <img src="IMAGENES/foto2.jpg">
+         <p> Este es un paisaje </p>
+         <button onclick="darLike('foto1')">👍 Me gusta</button>
+          <p id="contador-foto1"> </p>
+         <h4>Comentarios</h4>
+         <input type="text" id="comentario-foto1" placeholder="Escribe un comentario">
+         <button onclick="guardarComentario('foto1')">Enviar</button>
+          <ul id="lista-foto1"></ul>
+</div>
+    </div>
+    <div class="col-12 col-sm-6">
+      <div class="tarjeta">
+        <h2> Diseño 2</h2>
+         <img src="IMAGENES/foto4.jfif">
+         <p> Este es un paisaje </p>
+         <button onclick="darLike('foto2')">👍 Me gusta</button>
+<p id="contador-foto2"> </p>
+        <h4>Comentarios</h4>
+         <input type="text" id="comentario-foto2" placeholder="Escribe un comentario">
+         <button onclick="guardarComentario('foto2')">Enviar</button>
+          <ul id="lista-foto2"></ul>
+       </div>
+    </div>
+</div> </div>
+
+
+
+<script src="JAVASCRIPT/script.js"></script>
+
+</body>
+</html>
